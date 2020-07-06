@@ -6,6 +6,12 @@ public class Car {
 	 * 
 	 * Kanna anantha 
 	 */
+	
+	public  void start() {
+		//changes for HIS-122
+		int i = 123;
+	}
+	
 	private int a;
 	private String b;
 
