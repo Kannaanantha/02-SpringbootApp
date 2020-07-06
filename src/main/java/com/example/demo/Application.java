@@ -12,6 +12,7 @@ public class Application {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext run = SpringApplication.run(Application.class, args);
 		//chages for HIS-134
+int a = 10 ;
 		run.close();
 		
 	
