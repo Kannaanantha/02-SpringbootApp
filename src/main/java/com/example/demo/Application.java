@@ -8,15 +8,23 @@ import net.bytebuddy.dynamic.loading.ClassLoadingStrategy.Configurable;
 
 @SpringBootApplication
 public class Application {
-                  private static final String REST_URL="http"
 
-	public static void main(String[] args) {
+    private Map<String, Object> cache = new HashMap<String, object>();
+
+    private static final String REST_URL="http"
+
+	  public static void main(String[] args) {
 		ConfigurableApplicationContext run = SpringApplication.run(Application.class, args);
 		//chages for HIS-134
-int a = 10 ;
+    int a = 10 ;
 		run.close();
 		
 	
 	}
+	//HIS-301 chages
+	public void localDataToCache(){
+	//logic
+	}
+	
 
 }
