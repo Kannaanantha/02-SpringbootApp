@@ -8,7 +8,7 @@ import net.bytebuddy.dynamic.loading.ClassLoadingStrategy.Configurable;
 
 @SpringBootApplication
 public class Application {
-
+    private Map<String, Object> cache = new HashMap<String, object>();
 	public static void main(String[] args) {
 		ConfigurableApplicationContext run = SpringApplication.run(Application.class, args);
 		//chages for HIS-134
@@ -17,5 +17,10 @@ int a = 10 ;
 		
 	
 	}
+	//HIS-301 chages
+	public void localDataToCache(){
+	//logic
+	}
+	
 
 }
