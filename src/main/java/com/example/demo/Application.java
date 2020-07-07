@@ -13,7 +13,10 @@ public class Application {
 		ConfigurableApplicationContext run = SpringApplication.run(Application.class, args);
 		//chages for HIS-134
 		run.close();
-		
+		//HIS-200 related changes
+                               public void doProcess(){
+                               //logic goes here
+                              }
 	
 	}
 
